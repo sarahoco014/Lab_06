@@ -1,4 +1,6 @@
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CustomerTest {
 
@@ -24,9 +26,11 @@ public class CustomerTest {
     }
 
     @Test
-    public void canSetWallet() {
-        customer.setWallet(200);
-        assertThat(customer.getWallet()).isEqualTo(200);
+    public void canBuyArtwork() {
+        customer.buyArtwork(10.5);
+        double actual = customer.getWallet();
+        double expected = 989.5;
+        assertThat(actual).isEqualTo(expected);
     }
 
 }

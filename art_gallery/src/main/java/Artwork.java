@@ -1,29 +1,24 @@
 public class Artwork {
 
     private String title;
-    private String artist;
+    private Artist artist;
     private double price;
 
-    public Artwork(String inputTitle, String inputArtist, double inputPrice) {
-        this.title = inputTitle;
-        this.artist = inputArtist;
-        this.price = inputPrice;
+    public Artwork(String title, Artist artist, double price) {
+        this.title = title;
+        this.artist = artist;
+        this.price = price;
     }
 
     public String getTitle() {
         return this.title;
     }
 
-    public String getArtist() {
+    public Artist getArtist() {
         return this.artist;
     }
 
     public double getPrice() {
         return this.price;
     }
-
-    public void setPrice(double amount) {
-        this.price = amount;
-    }
-
 }

@@ -3,9 +3,9 @@ public class Customer {
     private String name;
     private double wallet;
 
-    public Customer(String customerName, double inputWallet) {
-        this.name = customerName;
-        this.wallet = inputWallet;
+    public Customer(String name, double wallet) {
+        this.name = name;
+        this.wallet = wallet;
     }
 
     public String getCustomerName() {
@@ -16,7 +16,10 @@ public class Customer {
         return this.wallet;
     }
 
-    public void canSetWallet(double amount) {
-        this.wallet = amount;
+    public void buyArtwork(double price) {
+        this.wallet -= price;
     }
+
 }
+
+

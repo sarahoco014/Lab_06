@@ -18,7 +18,6 @@ public class ArtistTest {
         String actual = artist.getName();
         String expected = "Bob";
         assertThat(actual).isEqualTo(expected);
-
     }
 
 
